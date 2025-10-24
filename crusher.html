@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>KGI M SAND — Detailed</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --bg1:#f0f8ff; --bg2:#e6f7ff; --accent:#005580; --dark:#0f2027;
+      --card:#fff; --muted:#666; --icon-bg: rgba(255,255,255,0.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Segoe UI, Roboto, Arial, sans-serif;
+      background:linear-gradient(90deg,var(--bg1),var(--bg2));color:#222}
+    header{background:linear-gradient(90deg,var(--dark),#2c5364);color:#fff;padding:40px 18px;text-align:center}
+    header h1{margin:0;font-size:28px} header p{margin:6px 0 0;color:#d7eef7}
+    nav{background:#222;padding:10px;text-align:center} nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600}
+    nav a:hover{color:#00f2fe}
+    .wrap{max-width:1100px;margin:22px auto;padding:0 16px}
+    .hero{background:linear-gradient(90deg,#4facfe,#00f2fe);color:#fff;padding:26px;border-radius:10px;text-align:center;margin-bottom:18px}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(12,40,60,0.06)}
+    @media(min-width:760px){.card.col-6{grid-column:span 6}.card.col-4{grid-column:span 4}.card.col-8{grid-column:span 8}}
+    h3{color:var(--accent);margin-top:0}
+    p.muted{color:var(--muted);margin:6px 0}
+    ul.clean{padding-left:18px}
+    .gallery{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+    .gallery .img{width:100%;max-width:320px;border-radius:8px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+    .gallery img{display:block;width:100%;height:auto}
+    table.pricing{width:100%;border-collapse:collapse;margin-top:10px}
+    table.pricing th, table.pricing td{padding:10px;border:1px solid #e6f2f7;text-align:left}
+    table.pricing th{background:#eaf9ff;color:#074a5b}
+    .map{width:100%;height:320px;border-radius:8px;overflow:hidden;border:1px solid #e2f3fa;margin-top:10px}
+    form .row{display:flex;gap:8px;flex-direction:column}
+    @media(min-width:520px){form .row{flex-direction:row}}
+    input,textarea,select{width:100%;padding:10px;border:1px solid #e6eef3;border-radius:6px}
+    button.primary{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+    footer{margin-top:20px;background:linear-gradient(90deg,#2c3e50,#4ca1af);color:#fff;padding:20px;text-align:left;border-radius:8px;max-width:1100px;margin:18px auto;display:grid;grid-template-columns:repeat(12,1fr);gap:12px;align-items:start}
+    .note{font-size:13px;color:var(--muted)}
+
+    /* Footer layout */
+    .footer-brand{grid-column:span 4;padding:8px}
+    .footer-contact{grid-column:span 4;padding:8px}
+    .footer-links{grid-column:span 4;padding:8px}
+    .footer-links ul{list-style:none;padding:0;margin:0}
+    .footer-links li{margin:6px 0}
+    .socials{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+    .socials a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px;background:var(--icon-bg);color:#fff;text-decoration:none;transition:transform 160ms ease, background 160ms ease}
+    .socials a:hover{transform:translateY(-4px);background:rgba(255,255,255,0.12)}
+    .socials svg{width:20px;height:20px;display:block;fill:currentColor}
+    .footer-bottom{grid-column:1/-1;border-top:1px solid rgba(255,255,255,0.06);padding-top:12px;margin-top:8px;font-size:13px;color:rgba(255,255,255,0.92)}
+    @media(max-width:760px){
+      .footer-brand,.footer-contact,.footer-links{grid-column:span 12}
+      footer{padding:16px}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KGI M SAND</h1>
+    <p>Premium Jally, M-Sand & P-Sand manufactured from durable black rock</p>
+  </header>
+
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#products">Products</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#location">Location</a>
+  </nav>
+
+  <main class="wrap">
+    <section id="hero" class="hero">
+      <h2>Build stronger structures with tested materials</h2>
+      <p class="muted">Supplying contractors, developers and retail customers across Tamil Nadu.</p>
+      <a class="cta" href="#contact">Request a Quote</a>
+    </section>
+
+    <div class="grid">
+
+      <article class="card col-8" id="products">
+        <h3>Products & Key Uses</h3>
+        <p class="muted">All materials are produced from black rock using controlled crushing, screening and optional washing for finer grades.</p>
+        <ul class="clean">
+          <li><strong>Jally (Blue Metal Aggregates)</strong> — sizes: 6mm, 12mm, 20mm, 40mm; typical use: concrete mixes, road base and drainage layers.</li>
+          <li><strong>M-Sand (Manufactured Sand)</strong> — graded for concrete and masonry; consistent particle shape and controlled fines.</li>
+          <li><strong>P-Sand (Plastering Sand)</strong> — fine, washed for smooth plaster finishes and rendering.</li>
+        </ul>
+
+        <h4 style="color:var(--accent);margin-bottom:6px">Typical technical ranges</h4>
+        <ul class="clean">
+          <li>Fineness modulus M-Sand: ~2.6–3.0 (adjustable)</li>
+          <li>Specific gravity: 2.6–2.8</li>
+          <li>Moisture content (M-Sand): usually &lt;2% (dry on request)</li>
+          <li>Aggregate Crushing Value (ACV): typically &lt;30% for general concrete use</li>
+        </ul>
+
+        <h4 style="color:var(--accent);margin-bottom:6px">Handling & storage</h4>
+        <p class="muted">Store in dry covered area to avoid moisture pickup; use clean vehicles to avoid contamination; sample a small batch before large pours.</p>
+      </article>
+
+      <aside class="card col-4" id="pricing">
+        <h3>Material Pricing (Indicative)</h3>
+        <table class="pricing" aria-label="Material Pricing">
+          <thead><tr><th>Material</th><th>Unit</th><th>Approx Price</th></tr></thead>
+          <tbody>
+            <tr><td>Jally 20mm</td><td>Per Ton</td><td>1000</td></tr>
+            <tr><td>M-Sand</td><td>Per Ton</td><td>1200</td></tr>
+            <tr><td>P-Sand</td><td>Per Ton</td><td>1250</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Prices vary with quantity & distance. Ask for a firm quote with delivery PIN code.</p>
+      </aside>
+
+      <section class="card col-12" id="gallery">
+        <h3>Gallery — Material Images</h3>
+        <p class="muted">IMAGES.</p>
+
+        <div class="gallery">
+          <div class="img"><img src="20mm.jpeg" alt="Jally 20mm sample"></div>
+          <div class="img"><img src="msand.jpg" alt="M-Sand sample"></div>
+          <div class="img"><img src="6mm.jpg" alt="P-Sand sample"></div>
+          <div class="img"><img src="tipper.jpg" alt="Delivery truck"></div>
+        </div>
+
+        
+      </section>
+
+      <article class="card col-7" id="contact">
+        <h3>Contact & Enquiry</h3>
+        <p class="muted"><strong>Phone:</strong> +91-98765-43210 • <strong>Email:</strong> sales@blackrockcrusher.in</p>
+        <form onsubmit="alert('Demo: form not connected. Replace with server-side handler or service.'); return false;">
+          <div class="row" style="margin-bottom:8px">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="text" name="phone" placeholder="Phone or WhatsApp" required>
+          </div>
+          <div class="row" style="margin-bottom:8px">
+            <input type="email" name="email" placeholder="Email (optional)">
+            <select name="material" required>
+              <option value="">Select material</option>
+              <option value="jally">Jally 20mm</option>
+              <option value="msand">M-Sand</option>
+              <option value="psand">P-Sand</option>
+            </select>
+          </div>
+          <div style="margin-bottom:8px">
+            <textarea name="details" rows="3" placeholder="Quantity, delivery pin code, preferred date"></textarea>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button class="primary" type="submit">Send Enquiry</button>
+            <div class="note">We will reply with availability, transport charges and firm quote.</div>
+          </div>
+        </form>
+
+        <h4 style="color:var(--accent);margin-top:12px">Operating Hours</h4>
+        <p class="muted">Mon – Sat: 7:00 AM – 6:00 PM • Sundays: Closed (by appointment)</p>
+      </article>
+
+      <article class="card col-5" id="location">
+        <h3>Location (map)</h3>
+        <p class="muted">KGI M-SAND.</p>
+        <div class="map" aria-hidden="false">
+          <iframe
+            src="https://www.google.com/maps?q=8.2508901,77.4592874&z=18&output=embed"
+            width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p class="note">To show a business pin or named place, open the location in Google Maps ? Share ? Embed a map, copy the iframe Google gives and replace the src above.</p>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <h3 style="margin:0;color:#fff">KGI M SAND</h3>
+      <p class="note" style="margin:6px 0 0">Quality aggregates and sands sourced from durable black rock. Serving builders across Tamil Nadu since 2015.</p>
+      <div class="socials" aria-label="Social links">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.95v-7.04H7.9v-2.91h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.62.77-1.62 1.56v1.88h2.77l-.44 2.91h-2.33v7.04C18.34 21.2 22 17.06 22 12.07z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm8 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 0 0 12 7.5zm0 2a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/></svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.37 0 .07 5.3.07 11.93c0 2.1.55 4.16 1.6 5.96L0 24l6.4-1.62A11.86 11.86 0 0 0 12 24c6.63 0 11.93-5.3 11.93-11.93 0-3.2-1.25-6.2-3.43-8.45zM12 21.6c-1.2 0-2.38-.32-3.4-.92l-.24-.14-3.8.95.97-3.7-.15-.25A8.2 8.2 0 0 1 3.8 12c0-4.62 3.76-8.38 8.4-8.38 4.63 0 8.39 3.76 8.39 8.38S16.63 21.6 12 21.6zM16.1 14.98l-.8.23a1.03 1.03 0 0 1-.96-.28l-.5-.53a.99.99 0 0 0-.71-.33c-.2 0-.42.02-.66.02-.18 0-.37-.01-.57-.01-.37 0-.92.14-1.4.66-.5.54-.9 1.5-.9 2.95 0 1.66 1.6 2.9 3.04 2.9 2.14 0 3.57-1.04 4.14-3.18.3-1.12.05-1.9-.19-2.24-.26-.36-.58-.47-.65-.49z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.86v5.49H8.91V9h3.41v1.56h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.34 2.41 4.34 5.56v6.18zM5.34 7.43a2.06 2.06 0 1 1 .01-4.12 2.06 2.06 0 0 1-.01 4.12zM7.11 20.45H3.57V9h3.54v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h4 style="margin:0;color:#fff">Contact</h4>
+      <p class="note" style="margin:8px 0 0"><strong>Phone:</strong> +91-98765-43210</p>
+      <p class="note" style="margin:4px 0 0"><strong>Email:</strong> sales@blackrockcrusher.in</p>
+      <p class="note" style="margin:4px 0 0"><strong>Address:</strong> Radhapuram Area, Tirunelveli District, Tamil Nadu, India</p>
+      <p class="note" style="margin:6px 0 0"><strong>GSTIN:</strong> 33AAAAA0000A1Z5</p>
+    </div>
+
+    <div class="footer-links">
+      <h4 style="margin:0;color:#fff">Quick Links</h4>
+      <ul>
+        <li><a href="#products" style="color:#fff;text-decoration:none">Products & Uses</a></li>
+        <li><a href="#pricing" style="color:#fff;text-decoration:none">Pricing & Delivery</a></li>
+        <li><a href="#contact" style="color:#fff;text-decoration:none">Request a Quote</a></li>
+        <li><a href="#gallery" style="color:#fff;text-decoration:none">Gallery</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px">
+        <div>© 2025 KGI M SAND — All rights reserved.</div>
+        <div>Registered Office: Radhapuram, Tirunelveli • Supply regions: Tamil Nadu</div>
+        <div style="color:var(--muted)">Last updated: Oct 2025</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
